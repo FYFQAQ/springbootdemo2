@@ -1,0 +1,19 @@
+server:
+  port: 8887
+person:
+  name: zhangsan45
+  age: 187
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    data-password: root
+    data-username: root
+    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
+
+#spring集成Mybatis环境
+#pojo别名扫描包
+mybatis:
+  type-aliases-package: com.demo.domain
+  mapper-locations: classpath:mapper/*Mapper.xml
+#加载Mybatis映射文件
